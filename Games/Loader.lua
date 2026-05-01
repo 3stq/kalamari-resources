@@ -15,7 +15,7 @@ local games = {};
 do
     games["fallen survival"] = {
         status    = "undetected";
-        executors = { "Wave", "Potassium", "Volt", "Synapse Z" };
+        executors = { "Wave", "Volt", "Synapse Z", "Madium" };
     };
 end
 
@@ -91,8 +91,8 @@ do
 
         local clean_game = loader.clean(game_name);
         local choice = loader.message(
-            "No script is officially supported for this game: " .. clean_game .. "\nAre you sure you want to load the universal loader?",
-            "[" .. executor_name .. "] Universal Loader"
+            "No script is officially supported for this game: " .. clean_game .. "\nAre you sure you want to load universal?",
+            "[" .. executor_name .. "] Universal"
         );
 
         if (choice == 6) then
